@@ -5,10 +5,11 @@ export const meta: MetaFunction = () => {
 };
 
 export function loader() {
-  console.log(import.meta.env.VITE_APP_TITLE);
+  console.log(import.meta.env);
   return null;
 }
 
 export default function Index() {
+  console.log(import.meta.env);
   return <div>{import.meta.env.VITE_APP_TITLE}</div>;
 }
